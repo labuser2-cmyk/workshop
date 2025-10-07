@@ -40,8 +40,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      - name: 'Debug: Print Repository Owner'
-        run: echo "This workflow is running from a repository owned by: ${{ github.repository_owner }}"
       - uses: google-github-actions/auth@v2
         with:
           project_id: ${{ vars.GOOGLE_CLOUD_PROJECT_ID }}
